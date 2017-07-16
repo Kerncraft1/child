@@ -128,7 +128,7 @@ if ( have_posts() ) : while ( have_posts()): the_post(); ?>
 
                 <?php if (types_render_field("mods_images", array(rel => "lightbox", "style" => "width: 49%;",))) { ?>
                     <div class="video-gallery">
-                        <div class="head-video-gallery">Скриншоты модификации 1</div>
+                        <div class="head-video-gallery">Скриншоты модификации</div>
                         <div class="images-gallery">
 
 
@@ -254,8 +254,10 @@ if ( have_posts() ) : while ( have_posts()): the_post(); ?>
                                                   aria-hidden="true"></i> Тест на версии игры:</span>
                                 <b><?php echo types_render_field("game_version", array()); ?></b></section><?php } ?>
                         </div>
-
-                        <hr class="style13">
+                        
+                        <div class="ad-info-block-1">
+                            <img src="http://loc-mod-land.ru/wp-content/uploads/2016/12/90J1K247h069S932-1.png">
+                        </div>
 
                         <div class="file-detail">
                             <div class="file-detail-item"><span><i class="fa fa-folder-open" aria-hidden="true"></i> Размер:</span>
@@ -334,7 +336,7 @@ if ( have_posts() ) : while ( have_posts()): the_post(); ?>
 
 
                         <div class="ad-after-info">
-                            <?php if (function_exists('the_ad_placement')) the_ad_placement('posle-knopki-skachat'); ?>
+                            <img src="http://loc-mod-land.ru/wp-content/uploads/2017/07/580x4005.jpg" alt="">
                         </div>
 
                     </div>

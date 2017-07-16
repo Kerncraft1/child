@@ -16,7 +16,95 @@
 /* write custom css after this line */
 
 /* Отдельная запись */
+/* Блок заголовка, крошек, мета и рейтинга */
+.post-layout-1 .entry-header-outer {
+    padding: 10px 0 0;
+    background: #0e8493;
+    margin-bottom: 5px;
+}
 
+/* Хлебные крошки */
+.ml-breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#breadcrumb, #breadcrumb a:not(:hover) {
+    color: #a5a0a0;
+}
+
+#breadcrumb, #breadcrumb a:hover {
+    color: #e74c3c;
+}
+
+.entry-header-outer #breadcrumb {
+    margin: 0 0 8px;
+    padding: 0 10px 0 10px;
+    color: #a5a0a0;
+}
+
+.add-bookmark.recall-button {
+    background: #e74c3c !important;
+    border-radius: 3px !important;
+    margin-right: 5px;
+}
+
+/* Основной блок */
+.ml-head-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.ml-head-left {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    border-right: 1px solid #a4a4a4;
+}
+
+.post-layout-1 .entry-header {
+    padding: 5px 10px 10px 10px;
+}
+
+.entry-header .post-meta, .entry-header .post-meta a:not(:hover) {
+    color: #fff;
+}
+
+.ml-head-right {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+/* Рейтинг */
+.rating-average {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+.rating-images {
+    font-size: 0.7em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rating-users {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* Дополнительные поля */
 /* Видео блок и галерея */
 .video-gallery {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -29,7 +117,7 @@
     text-align: center;
     font-size: 20px;
     font-weight: 600;
-    background: #0088ff;
+    background: #0e8493;
     color: #ffffff;
     padding: 5px;
     margin-bottom: 5px;
@@ -54,16 +142,18 @@
     margin: 5px;
 }
 
-/* Разделитель HR */
-hr.style13 {
-    height: 10px;
-    border: 0;
-    box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
-
 /* Блок информации о файле */
 .info-list {
-    padding: 10px 0 10px 10px;
+    padding: 10px;
+}
+
+.info-list section {
+    border-bottom: solid 1px #9c9c9c;
+    padding: 3px 0 3px 0;
+}
+
+.info-list section b {
+    float: right;
 }
 
 .file-detail {
@@ -80,4 +170,9 @@ hr.style13 {
 .download-url {
     text-align: center;
     margin-bottom: 10px;
+}
+
+/* Реклама */
+.ad-after-info {
+    text-align: center;
 }
