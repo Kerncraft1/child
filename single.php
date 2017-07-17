@@ -343,6 +343,17 @@ if ( have_posts() ) : while ( have_posts()): the_post(); ?>
 
                 <?php } ?>
 
+                <!-- Блок вывода информации по установке модов -->
+                <?php if (!dynamic_sidebar("postin-widget-area") ) : ?>
+                    <!-- Код который будет выводиться если в вашей области не добавлено -->
+                    <!-- ни одного виджета -->
+                <?php endif; ?>
+
+                <!-- Вывод блока автора записи WP-Recall -->
+                <div class="video-gallery">
+                    <?php echo rcl_get_author_block(); ?>
+                </div>
+
                 <?php
                 # Get post tags ----------
                 if ((jannah_get_option('post_tags') && !jannah_get_postdata('tie_hide_tags')) || jannah_get_postdata('tie_hide_tags') == 'no') {

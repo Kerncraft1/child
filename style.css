@@ -15,6 +15,36 @@
 
 /* write custom css after this line */
 
+/* Страницы архивов */
+/* Заголовок страницы архивов */
+.container-wrapper {
+    padding: 10px 30px 10px 30px;
+}
+
+.page-title-category {
+    font-size: 24px;
+}
+
+/* Вывод описания рубрики */
+.taxonomy-description {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.taxonomy-description p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.taxonomy-description h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
 /* Отдельная запись */
 /* Блок заголовка, крошек, мета и рейтинга */
 .post-layout-1 .entry-header-outer {
@@ -95,13 +125,11 @@
 .rating-images {
     font-size: 0.7em;
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .rating-users {
     font-size: 12px;
     text-align: center;
-    padding-bottom: 5px;
 }
 
 /* Дополнительные поля */
@@ -131,6 +159,7 @@
     flex-flow: row wrap;
     display: -webkit-box;
     display: flex;
+    justify-content: center;
 }
 
 .item-gallery {
@@ -172,7 +201,55 @@
     margin-bottom: 10px;
 }
 
+/* Блок установка модов */
+#install-mods {
+    background-color: #0e8493;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+#install-mods span {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.70);
+}
+
+#install-mods p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+#install-mods p a {
+    color: #fff;
+    background-color: #e74c3c;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+#install-mods p b {
+    font-weight: 600;
+}
+
 /* Реклама */
 .ad-after-info {
     text-align: center;
+}
+
+/* WP-Recall */
+/* Скрываем блок с кнопкой редактирования записи */
+#rcl-post-bar {
+    display: none;
 }
